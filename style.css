@@ -1,12 +1,18 @@
 body {
   font-family: sans-serif;
   background: #f0f0f0;
-  display: flex;
-  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
 }
 
 .calculator {
-  width: 300px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -15,7 +21,7 @@ body {
 
 #display {
   width: 100%;
-  padding: 20px;
+  padding: 24px 20px;
   font-size: 1.8em;
   border: none;
   text-align: right;
@@ -30,7 +36,7 @@ body {
 }
 
 button {
-  padding: 20px;
+  padding: 24px 20px;
   font-size: 1.5em;
   border: none;
   background: #f5f5f5;
