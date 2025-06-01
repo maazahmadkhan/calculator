@@ -23,7 +23,7 @@ clearBtn.addEventListener("click", () => {
 equalsBtn.addEventListener("click", () => {
   try {
     const result = eval(expression);
-    display.value = result;
+    display.value = parseFloat(result.toFixed(2));
     expression = result.toString();
     localStorage.setItem("lastCalc", expression);
   } catch {
